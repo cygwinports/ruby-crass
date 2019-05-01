@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-crass"
+VERSION=1.0.4
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Pure Ruby CSS parser"
+DESCRIPTION="Crass is a pure Ruby CSS parser based on the CSS Syntax Level 3 spec."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_crass_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_crass_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
